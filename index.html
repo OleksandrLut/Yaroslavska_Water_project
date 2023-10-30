@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<title>Yaroslavska-Water</title>
+	</head>
+	<body>
+		<wrapper class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__logo logo">
+						<img src="/img/1_logo/logo.png" alt="image-logo" class="logo__img" />
+						<h2 class="logo__title">вода ярославська</h2>
+					</div>
+					<div class="header__menu menu-header">
+						<div class="menu-header__icon">
+							<span></span>
+						</div>
+						<nav class="menu-header__body">
+							<ul class="menu-header__list">
+								<li class="menu-header__item">
+									<a href="#order-section" class="menu-header__link link-menu">Замовити</a>
+								</li>
+								<li class="menu-header__item">
+									<a href="#delivery-section" class="menu-header__link link-menu">Доставка</a>
+								</li>
+								<li class="menu-header__item">
+									<a href="#certificates-section" class="menu-header__link link-menu">Інформація</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<div class="page__container">
+					<!-- =============================== top section =============================== -->
+					<section class="page__section-top top-section">
+						<div class="top-section__container">
+							<div class="top-section__body">
+								<div class="top-section__text">
+									<p>
+										Вода - джерело життя, а в умовах нашої екології якісна питна вода доступна не кожному, але
+										наш досвід, професіоналізм, сучасні технології, належне обслуговування, висока якість води
+										- гарантують міцне здоров’я вам та вашій родині.
+									</p>
+									<p>
+										Питна вода створена спеціально для поціновувачів власного здоров’я внаслідок застосування
+										багатоступінчатої технології глибокого очищення, в основі якої лежить запозичений у
+										природи процес мембранної фільтрації.
+									</p>
+								</div>
+							</div>
+							<div class="top-section__image">
+								<img
+									src="img/2_top-section/greg-rosenke-B_8AakaXD48-unsplash_1.png"
+									alt="image_greg-rosenke-B_8AakaXD48-unsplash_1"
+									class="top-section__img"
+								/>
+							</div>
+						</div>
+					</section>
+					<!-- =============================== order section =============================== -->
+					<section
+						class="page__section-order order-section right-element"
+						data-aos="fade-right"
+						id="order-section"
+					>
+						<h2 class="order-section__title title">Замовити</h2>
+						<div class="order-section__container">
+							<div class="order-section__body">
+								<div class="order-section__text">
+									<p>Доставка нашої води здійснюється в бутлях з полікарбонату (місткістю 18,9 л).</p>
+									<p>
+										Ви обираєте кількість товару, заповнюєте контактну інформацію і наш менеджер зв’яжеться з
+										вами зручним для вас способом.
+									</p>
+								</div>
+								<div class="order-section__image">
+									<img src="img/3_order-section/image_man_with_bottle.png" alt="image_man_with_bottle" />
+								</div>
+							</div>
+							<div class="order-section__form">
+								<form action="" class="form-order">
+									<div class="form-order__product-info">
+										<div class="form-order__quantity">
+											<label for="quantity">Кількість:</label>
+											<div class="quantity">
+												<button class="btn-quantity" id="increaseBtn">
+													<span>+</span>
+												</button>
+												<input
+													class="input-quantity"
+													type="number"
+													id="quantity"
+													name="quantity"
+													value="1"
+													min="1"
+												/>
+												<button class="btn-quantity" id="decreaseBtn">
+													<span>-</span>
+												</button>
+											</div>
+											<div class="form-order__price">
+												<span id="bottle-price">23,75</span>
+												грн
+											</div>
+										</div>
+
+										<div class="form-order__new-bottle new-bottle">
+											<div class="new-bottle__body">
+												<input class="new-bottle__input" type="checkbox" id="newBottle" name="newBottle" />
+												<label class="new-bottle__label" for="newBottle">
+													<span class="new-bottle__label-text">Нова тара</span>
+													<span class="new-bottle__logo-hint hint-logo">
+														?
+														<div class="new-bottle__hint hint-order">
+															<div class="hint-order__dody">
+																<p class="hint-order__text">
+																	Якщо ви не маєте тари на обмін, виберіть цей пункт!
+																</p>
+															</div>
+														</div>
+													</span>
+												</label>
+											</div>
+											<p><span id="new-bottle-price">350</span> грн</p>
+										</div>
+
+										<div class="form-order__delivery-info">
+											<p>Доставка:</p>
+											<p>
+												<span id="delivery-price">150</span>
+												грн
+											</p>
+										</div>
+
+										<div class="form-order__additional">
+											<select name="form[]" data-class-modif="form">
+												<option disabled selected>Додатково</option>
+												<option value="50">Ручка для бутля</option>
+												<option value="5">Пробка для бутля</option>
+												<option value="150">Якась фігня</option>
+											</select>
+										</div>
+
+										<div class="form-order__total">
+											<p>Вартість:</p>
+											<p>
+												<span id="total-price">173.75</span>
+												грн
+											</p>
+										</div>
+									</div>
+									<div class="form-order__client-info client-info-form">
+										<div class="client-info-form__name">
+											<label for="username">Ім'я:</label>
+											<input class="input-form" type="text" name="" id="username" placeholder="Ім'я" />
+										</div>
+										<div class="client-info-form__phone">
+											<label for="user-phone">Номер телефону:</label>
+											<input
+												class="input-form"
+												type="tel"
+												name=""
+												id="user-phone"
+												placeholder="+38 067 000 00 00"
+											/>
+										</div>
+										<div class="client-info-form__address">
+											<label for="user-address">Адрес:</label>
+											<input
+												class="input-form"
+												type="text"
+												name=""
+												id="user-address"
+												placeholder="вул., буд., кв."
+											/>
+										</div>
+										<button class="client-info-form__button" id="form-button">Оформити замовлення</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</section>
+					<!-- =============================== more section =============================== -->
+					<section class="page__section-more-goods more-goods-section left-element" data-aos="fade-left">
+						<div class="more-goods-section__container">
+							<div class="more-goods-section__body">
+								<h2 class="more-goods-section__title title">У нас додатково у продажу є:</h2>
+								<div class="more-goods-section__wrap swiper-container">
+									<div class="more-goods-section__gallery goods-gallery swiper-wrapper">
+										<div class="goods-gallery__item item-goods swiper-slide">
+											<div class="item-goods__image">
+												<img
+													src="img/4_additional-goods-section/image_bottle-plug.png"
+													alt="image_bottle_plug"
+													class="item-goods__img"
+												/>
+											</div>
+											<div class="item-goods__body">
+												<h3 class="item-goods__title">Пробка для бутлів</h3>
+												<div class="item-goods__price"><span>5.00</span> грн</div>
+											</div>
+										</div>
+
+										<div class="goods-gallery__item item-goods swiper-slide">
+											<div class="item-goods__image">
+												<img
+													src="img/4_additional-goods-section/image_bottle.png"
+													alt="image_bottle"
+													class="item-goods__img"
+												/>
+											</div>
+											<div class="item-goods__body">
+												<h3 class="item-goods__title">Бутель ПЕТФ 5л з кришкою та ручкою</h3>
+												<div class="item-goods__price"><span>22.00</span> грн</div>
+											</div>
+										</div>
+
+										<div class="goods-gallery__item item-goods swiper-slide">
+											<div class="item-goods__image">
+												<img
+													src="img/4_additional-goods-section/image_bottle.png"
+													alt="image_bottle"
+													class="item-goods__img"
+												/>
+											</div>
+											<div class="item-goods__body">
+												<h3 class="item-goods__title">Бутель ПЕТФ 6л з кришкою та ручкою</h3>
+												<div class="item-goods__price"><span>25.00</span> грн</div>
+											</div>
+										</div>
+
+										<div class="goods-gallery__item item-goods swiper-slide">
+											<div class="item-goods__image">
+												<img
+													src="img/4_additional-goods-section/image_bottle.png"
+													alt="image_bottle"
+													class="item-goods__img"
+												/>
+											</div>
+											<div class="item-goods__body">
+												<h3 class="item-goods__title">Бутель ПЕТФ 10л з кришкою та ручкою</h3>
+												<div class="item-goods__price"><span>35.00</span> грн</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+									<!-- <div class="swiper-pagination"></div> -->
+									<!-- <div class="swiper-scrollbar"></div> -->
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- =============================== delivery section =============================== -->
+					<section
+						class="page__section-delivery delivery-section right-element"
+						data-aos="fade-right"
+						id="delivery-section"
+					>
+						<div class="delivery-section__container">
+							<h2 class="delivery-section__title title">Доставка</h2>
+							<div class="delivery-section__body">
+								<div class="delivery-section__info">
+									<p>
+										Для зберігання властивостей і безпечного зберігання вода потребує відповідної тари.
+										Доставка нашої води здійснюється в бутлях з полікарбонату (місткістю 18,9 л). Такий
+										матеріал є добрим замінником скла, тому бутлі надійно витримують механічні навантаження і
+										на противагу тарі, виготовленій з пластику, вони повністю інертні (нейтральні до речовин,
+										які в них зберігаються) і можуть використовуватись багаторазово. Тара, якою ми
+										користуємося, сертифікована.
+									</p>
+									<p>Користуйтеся нашою водою та будьте певні, що п’єте чисту та корисну воду.</p>
+								</div>
+								<div class="delivery-section__map map-delivery">
+									<h4 class="map-delivery__title">Ми доставляємо воду по м.Київ в межах району Позняки:</h4>
+									<div class="map-delivery__map">
+										<iframe
+											src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13473.83090163811!2d30.64679376904648!3d50.3992077049692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1697295692666!5m2!1suk!2sua"
+											style="border: 0"
+											allowfullscreen=""
+											loading="lazy"
+											referrerpolicy="no-referrer-when-downgrade"
+										></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- =============================== certificates section =============================== -->
+					<section
+						class="page__section-certificates certificates-section left-element"
+						data-aos="fade-left"
+						id="certificates-section"
+					>
+						<div class="certificates-section__container">
+							<h2 class="certificates-section__title title">Інформація та сертифікати</h2>
+							<div class="certificates-section__body">
+								<div class="certificates-section__info">
+									<p class="certificates-section__header">
+										Вода <strong>ЯРОСЛАВСЬКА</strong> мінералізована і містить необхідні для щоденного
+										вживання мікроелементи:
+									</p>
+									<div class="certificates-section__description description-list">
+										<p class="description-list__item">
+											Магній бере участь у енергетичному обміні. Сприяє розслабленню м'язових волокон
+											(мускулатури судин та внутрішніх органів).
+										</p>
+										<p class="description-list__item">
+											Кремній підвищує імунітет, зніжує рівень цукру та холестерину. Виводить пісок та
+											каміння з нирок та сечовика.
+										</p>
+										<p class="description-list__item">
+											Вуглець, має чудові сорбційні, каталітичні та бактерицидні властивості. Насичує волосся
+											та шкіру голови необхідними мікроелементами.
+										</p>
+										<p class="description-list__item">
+											Кальцій, основа кісткової тканини, бере участь у передачі нервових імпульсів у нервовій
+											системі.
+										</p>
+										<p class="description-list__item">
+											Натрій, нормалізує водний та кислотно-лужний обмін в організмі.
+										</p>
+									</div>
+									<p class="certificates-section__standart">
+										Вода проходить постійне тестування і відповідає існуючим стандартам якості НД Сан. Пін
+										2.2.4-171-10
+									</p>
+								</div>
+								<ul class="certificates-section__links links-list">
+									<li class="links-list__item">
+										<a href="" class="links-list__link">Сертифікат відповідності на воду</a>
+									</li>
+									<li class="links-list__item">
+										<a href="" class="links-list__link"
+											>Висновок державної санітарно-епідеміологічної експертизи (Вода)</a
+										>
+									</li>
+									<li class="links-list__item">
+										<a href="" class="links-list__link"
+											>Висновок державної санітарно-епідемологічної експертизи (Тара)</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<img src="img/1_logo/logo.png" alt="image_logo" />
+							<h2 class="footer__title">вода ярославська</h2>
+						</div>
+						<div class="footer__contacts contacts-footer">
+							<h4 class="contacts-footer__title">Контакти:</h4>
+							<ul class="contacts-footer__phone">
+								<li>
+									<a href="tel:+380675859035">+38 (067) 585 90 35</a>
+								</li>
+								<li>
+									<a href="tel:+380665859035">+38 (066) 585 90 35</a>
+								</li>
+							</ul>
+						</div>
+						<ul class="footer__menu menu-footer">
+							<li class="menu-footer__item">
+								<a href="#order-section" class="menu-footer__link link-menu">Замовити</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#delivery-section" class="menu-footer__link link-menu">Доставка</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#certificates-section" class="menu-footer__link link-menu">Інформація</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</wrapper>
+		<!-- JS Swiper -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+// ================ px to rem converter ================
+@function toRem($value) {
+   $remValue: ($value / 16) + rem; 
+   @return $remValue;
+}
+
+// ================    colors layout    ================
+$blueDarkColor: #00507A;
+$blueColor: #006092;
+$backgroundColorWhite: rgba(255,255,255,1);
+$backgroundColorWhiteTransparent: rgba(255,255,255,0.6);
+$backgroundColorBlue: #EBF8FF;
+$disabledColorGray: #A3A3A3;
+$blackColor: #141414;
+
+// ================      breakpoints     ================
+$pc: 1199.98px;
+$tablet: 991.98px;
+$mobile: 767.98px;
+$mobileSmall: 599.98px;
